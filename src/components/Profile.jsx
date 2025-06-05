@@ -1,5 +1,8 @@
-import React from "react";
+
 import { MapPin } from "lucide-react";
+
+// Import the image
+import profilePic from "../assets/images/fe6a4abc-29b8-4540-ac8a-084ff9ff6fde (1).jpg";
 
 export default function Profile() {
   return (
@@ -16,7 +19,7 @@ export default function Profile() {
       </div>
       <img
         className="h-20 w-20 md:h-25 md:w-25 rounded-xl object-cover"
-        src="src/assets/images/fe6a4abc-29b8-4540-ac8a-084ff9ff6fde (1).jpg"
+        src={profilePic}
         alt="Profile"
       />
     </div>

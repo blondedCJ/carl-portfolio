@@ -6,31 +6,31 @@ const certifications = [
     title: "JavaScript Algorithms and Data Structure",
     company: "freeCodeCamp",
     year: "Nov 2023",
-    file: "/certificates/javascript-algorithms.pdf",
+    file: "javascript-algorithms.pdf",
   },
   {
     title: "Responsive Web Design",
     company: "freeCodeCamp",
     year: "Oct 2023",
-    file: "/certificates/responsive-web-design.pdf",
+    file: "responsive-web-design.pdf",
   },
   {
     title: "SAP Business One, Systems Integration and Architecture",
     company: "FIT Academy",
     year: "March 2023",
-    file: "/certificates/sap-business-one.pdf",
+    file: "sap-business-one.pdf",
   },
   {
     title: "Systems Administration",
     company: "Linux Professional Institute",
     year: "June 2022",
-    file: "/certificates/systems-administration.pdf",
+    file: "systems-administration.pdf",
   },
   {
     title: "Java Foundations",
     company: "Oracle",
     year: "June 2022",
-    file: "/certificates/java-foundations.pdf",
+    file: "java-foundations.pdf",
   },
 ];
 
@@ -52,14 +52,14 @@ const certifications = [
             </div>
             <div className="flex-1">
               <h3 className="text-white font-semibold">
-                <a
-                  href={item.file}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="hover:underline  hover:text-blue-400 transition-colors duration-200"
-                >
-                  {item.title}
-                </a>
+            <a
+              href={`${import.meta.env.BASE_URL}certificates/${item.file}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:underline hover:text-blue-400 transition-colors duration-200"
+            >
+              {item.title}
+            </a>
               </h3>
               <p className="text-sm text-neutral-400">{item.company}</p>
             </div>

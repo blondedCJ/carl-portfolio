@@ -10,17 +10,16 @@ export default function CapstoneProject() {
           <Joystick className="w-5 h-5 mt-1.5" />
           Capstone Project
         </h2>
-        <a
-          href="/game-ads/capstone-ad.mp4"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="flex items-center gap-2 text-sm bg-black rounded-sm py-2 px-3 justify-center hover:bg-gray-800 mr-5"
-        >
-          <PlayCircle className="w-5 h-5"/>
-          View
-        </a>
+          <a
+            href={`${import.meta.env.BASE_URL}game-ads/capstone-ad.mp4`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-2 text-sm bg-black rounded-sm py-2 px-3 justify-center hover:bg-gray-800 mr-5"
+          >
+            <PlayCircle className="w-5 h-5" />
+            View
+          </a>
       </div>
-
       <p className="text-2xl font-extrabold text-white mb-2">Paws & Play</p>
 
       <p className="text-white">
