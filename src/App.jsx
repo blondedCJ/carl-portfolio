@@ -36,7 +36,7 @@ export default function App() {
             { component: <Certifications />, className: "col-span-1 md:col-span-4 md:row-span-2" },
             { component: <Hobbies />, className: "col-span-1 md:col-span-2" },
             { component: <Capstone />, className: "col-span-1 md:col-span-6" },
-            { component: <Recommendations />, className: "col-span-1 md:col-span-6" },
+            { component: <Recommendations />, className: "col-span-1 md:col-span-6 mb-20" },
           ].map((item, index) => (
             <motion.div
               key={index}
